@@ -1,5 +1,7 @@
 _Remarks:_
-* Inpiration came from https://github.com/sanjujosh/auto-image-renamer, but since it used a legacy API i did it again.
+* Forked from https://github.com/frappierer/ai-image-renamer, who made it work with the new API.
+* API doesn't allow for the images file size must be less than 4MB, so the point of this fork is to fix that annoyance by sending a compressed version of the image to the API if the image file size is greater than 4MB.
+* The API is not the most accurate but its all we got for mass renaming images with AI (still looking for better options).
 * i am a bad coder....
 
 # AI-Image-Renamer
