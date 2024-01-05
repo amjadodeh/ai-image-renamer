@@ -13,12 +13,18 @@ This repository contains a Python script that utilizes AI to automatically renam
 - Python 3.x
 - A Microsoft Cognitive Services subscription key
 - PIL library
+- Optional (Recommended): python-dotenv
 
 ### Installation
 - Clone or download the repository
 - Install PIL by running `pip install pillow`
-- Replace `YOUR_SUBSCRIPTION_KEY` in the script with your actual subscription key
-- Replace `endpoint_url` in the script with the desired endpoint URL.
+- Now you have two options:
+- Option 1: Install python-dotenv by running `pip install python-dotenv` and delcare your variables in a .env file in the same directory as the script file like so:
+  ```
+  API_KEY="your_subscription_key_here"
+  ENDPOINT_URL="your_endpoint_url_here"
+  ```
+- Option 2: Remove the `from dotenv import load_dotenv` and `load_dotenv()` lines from the script and replace the values of `subscription_key` and `endpoint_url` with your actual subscription key and desired endpoint URL.
 
 ### Usage
 - Run the script with the command `python script.py image_folder [recursive]`
